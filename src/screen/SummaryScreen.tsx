@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         height: scale(268),
         borderRadius: scale(134),
         position: "absolute",
-        top: scale(-129),
+        top: scale(-145),
         right: scale(-30),
         overflow: "hidden",
         shadowColor: "#713294",

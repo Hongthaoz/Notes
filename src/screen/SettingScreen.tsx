@@ -94,14 +94,14 @@ const styles = StyleSheet.create({
     },
     headerGradient: {
         height: HEADER_HEIGHT,
-        paddingHorizontal: scale(20),
         borderBottomLeftRadius: 24,
         borderBottomRightRadius: 24,
         overflow: 'hidden',
         justifyContent: 'center',
-        paddingTop: scale(20)
     },
     headerContent: {
+        paddingTop: scale(20),
+        paddingHorizontal: scale(20),
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     },
     btnBack: {
         justifyContent: "center",
-        marginRight: scale(12)
+        marginRight: scale(8)
     },
     containerScroll: {
         padding: scale(16),
@@ -159,11 +159,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     btnDelete: {
-        paddingVertical: verticalScale(12),
-        paddingHorizontal: scale(48),
-        borderRadius: 32,
+        width: scale(200),
+        height: scale(34),
+        borderRadius: scale(16),
         alignItems: "center",
-        width: 'auto'
+        justifyContent: 'center',
     },
     btnText: {
         color: Colors.white,

@@ -134,14 +134,14 @@ const styles = StyleSheet.create({
     },
     headerGradient: {
         height: HEADER_HEIGHT,
-        paddingHorizontal: scale(20),
         borderBottomLeftRadius: 24,
         borderBottomRightRadius: 24,
         overflow: 'hidden',
         justifyContent: 'center',
-        paddingTop: scale(20)
     },
     headerContent: {
+        paddingHorizontal: scale(20),
+        paddingTop: scale(20),
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     },
     btnBack: {
         justifyContent: "center",
-        marginRight: scale(12)
+        marginRight: scale(8)
     },
     containerScroll: {
         padding: scale(16),
@@ -218,11 +218,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     btnSave: {
-        paddingVertical: verticalScale(12),
-        paddingHorizontal: scale(48),
-        borderRadius: 32,
+        width: scale(200),
+        height: scale(34),
+        borderRadius: scale(16),
         alignItems: "center",
-        width: scale(200)
+        justifyContent: 'center',
     },
     btnText: {
         color: Colors.white,

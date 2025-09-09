@@ -1,7 +1,6 @@
 import { StatusBar, StyleSheet, Text, TouchableOpacity, View, FlatList } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import { SvgXml } from "react-native-svg";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { arrow_back } from "../svgXml";
@@ -48,12 +47,12 @@ const SummaryDetailScreen = () => {
                     end={{ x: 1, y: 0 }}
                     style={styles.headerGradient}
                 >
-                    <SafeAreaView style={styles.headerContent}>
+                    <View style={styles.headerContent}>
                         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.btnBack}>
                             <SvgXml xml={arrow_back} width={24} height={24} />
                         </TouchableOpacity>
                         <Text style={styles.headerText}>{category} Notes</Text>
-                    </SafeAreaView>
+                    </View>
                 </LinearGradient>
 
                 <FlatList
@@ -77,26 +76,26 @@ const styles = StyleSheet.create({
     container: { flex: 1 },
     headerGradient: {
         height: HEADER_HEIGHT,
-        paddingHorizontal: scale(20),
         borderBottomLeftRadius: 24,
         borderBottomRightRadius: 24,
-        overflow: "hidden",
-        justifyContent: "flex-end",
+        overflow: 'hidden',
+        justifyContent: 'center',
     },
     headerContent: {
-        flexDirection: "row",
-        alignItems: "center",
-        gap: scale(8),
-    },
-    btnBack: {
-        justifyContent: "center"
+        paddingHorizontal: scale(20),
+        paddingTop: scale(20),
+        flexDirection: 'row',
+        alignItems: 'center',
     },
     headerText: {
         fontSize: Fonts.size.xlarge,
         fontWeight: Fonts.weight.medium,
-        fontFamily: "PingFang SC",
+        fontFamily: 'PingFang SC',
         color: Colors.white,
-        marginLeft: scale(4),
+    },
+    btnBack: {
+        justifyContent: "center",
+        marginRight: scale(8)
     },
     containerFlat: {
         padding: scale(16),
@@ -119,7 +118,7 @@ const styles = StyleSheet.create({
         fontSize: Fonts.size.small,
         fontWeight: Fonts.weight.regular,
         fontFamily: 'PingFang SC',
-        marginTop:scale(8)
+        marginTop: scale(8)
     },
     bottomFlat: {
         paddingBottom: scale(112)

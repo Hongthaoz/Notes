@@ -105,14 +105,14 @@ const styles = StyleSheet.create({
     },
     headerGradient: {
         height: HEADER_HEIGHT,
-        paddingHorizontal: scale(20),
         borderBottomLeftRadius: 24,
         borderBottomRightRadius: 24,
         overflow: 'hidden',
         justifyContent: 'center',
-        paddingTop: scale(20)
     },
     headerContent: {
+        paddingTop: scale(20),
+        paddingHorizontal: scale(20),
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
